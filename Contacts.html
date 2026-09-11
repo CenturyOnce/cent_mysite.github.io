@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Страница, на которой со мной можно связаться.">
+    <meta name="author" content="Любавина Яна Витальевна">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="css/main-style.css">
+    <link rel="icon" href="images/mail.png" type="image/png">   
+    <style>
+        form {
+            background: linear-gradient(135deg, hsl(37, 100%, 97%), #c8ffee);
+        }
+    </style>
+</head>
+    <body>
+        <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Главная</a></li>
+            <li><a href="Interests.html" class="nav-link">Мои интересы</a></li>
+        </ul>
+        <h1>Написать мне</h1>
+        <form id="feedback">
+            <h3>Имя отправителя</h3>
+            <input type="text" name="sender-name" id="sender-name">
+            <h3>Почта отправителя</h3>
+            <input type="email" name="sender-email" id="sender-email">
+            <h3>Номер телефона</h3>
+            <input type="tel" placeholder="+7 (XXX) XXX-XX-XX" name="sender-number" id="sender-number">
+            <h3>Обращение</h3>
+            <select id = "greeting">
+                <option value="1">Уважаемый</option>
+                <option value="2">Уважаемая</option>
+            </select>
+            <h3>Тема</h3>
+            <select style="font-size: medium;" id = "theme">
+                <option value="1">Жалоба</option>
+                <option value="2">Предложение</option>
+                <option value="3">Дружба</option>
+                <option value="4">Совместный проект</option>
+            </select>
+            <h3>Сообщение</h3>
+            <textarea name="message" id="sender-message" rows="5" placeholder="Введите ваше сообщение..."></textarea>
+            <h3>Файл</h3>
+            <input type="file" name="file" id="sender-file"><br><br>
+            <input type="checkbox" id="data">Согласие на обработку персональных данных<br><br>
+            <input type = "submit" class="action-button" id ="send">    <input type = "reset" class="action-button" id = "clear">
+            
+        </form>
+    </body>
+</html>
